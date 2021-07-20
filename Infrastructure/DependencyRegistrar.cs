@@ -7,14 +7,14 @@ using Nop.Services.Authentication;
 
 namespace Nop.Plugin.ExternalAuth.NovellActiveDirectory.Infrastructure
 {
-	public class DependencyRegistrar : IDependencyRegistrar
-	{
-		public int Order => 1;
+    public class DependencyRegistrar : IDependencyRegistrar
+    {
+        public int Order => 1;
 
-		public virtual void Register(ContainerBuilder builder, ITypeFinder typeFinder, NopConfig config)
-		{
-			builder.RegisterType<NovellInheritedCookieAuthenticationService>().As<IAuthenticationService>();
+        public virtual void Register(ContainerBuilder builder, ITypeFinder typeFinder, NopConfig config)
+        {
+            builder.RegisterType<NovellInheritedCookieAuthenticationService>().As<IAuthenticationService>();
             builder.RegisterType<LdapService>().As<ILdapService>();
         }
-	}
+    }
 }

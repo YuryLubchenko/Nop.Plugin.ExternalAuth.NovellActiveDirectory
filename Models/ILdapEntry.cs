@@ -1,6 +1,6 @@
 ﻿namespace Nop.Plugin.ExternalAuth.NovellActiveDirectory.Models
 {
-    interface ILdapEntry
+    internal interface ILdapEntry
     {
         string ObjectSid { get; set; }
         string ObjectGuid { get; set; }

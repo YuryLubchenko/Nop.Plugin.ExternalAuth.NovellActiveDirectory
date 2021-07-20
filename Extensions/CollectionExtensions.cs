@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace Nop.Plugin.ExternalAuth.NovellActiveDirectory.Extensions
 {
@@ -11,10 +9,7 @@ namespace Nop.Plugin.ExternalAuth.NovellActiveDirectory.Extensions
         {
             var arr = newValues.ToArray();
 
-            foreach (var value in arr)
-            {
-                source.Add(value);
-            }
+            foreach (var value in arr) source.Add(value);
         }
     }
 }
